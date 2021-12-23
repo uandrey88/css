@@ -1,0 +1,211 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500&display=swap');
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+   
+
+    font-size: 16px; /*размер сайта */
+    font-weight: 400; /*жирность шрифта*/
+    font-family: 'Roboto', sans-serif;
+    /* шрифт */
+
+    /* font: normal 16px 'Roboto', sans-serif  альтернативная запись*/
+    
+}
+
+
+a{
+     color: black; /*цвет ссылок */
+     text-decoration: none; /*курсор при наведении */
+}
+a:hover{
+     text-decoration: underline; /*убираем подчеркивание в ссылках */
+}
+a:active {
+     color: blue; /*цвет ссылки при наведении */
+}
+
+a:visited {
+ color: grey; /*цвет посещенной ссылки */
+}
+
+ .font{ /*работа с изображением */
+     width: 200px; /*размер */
+    border-radius: 30px; /* скругление */
+     box-shadow: 4px 4px 14px rgba(0, 0, 0, 40) ; /*тень */
+    
+}
+ .info p{ /*обращение к параграфам p */
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: none; декорации текста
+    text-transform: uppercase; текст с больших маленьких и тд букв
+    letter-spacing: 5px; расстояние между букв
+    word-spacing: 42px; расстояние между слов*/
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex; 
+    margin-bottom: 20px;
+    
+
+}
+
+@media (max-width: 700px){
+    .info{
+        text-align: center;
+        display: block;
+    }
+}
+.info img{
+    
+    margin-bottom: 10px;
+    margin-top: 30px;
+    
+    
+
+}  
+
+.info-txt{
+    margin-left: 40px;
+
+}
+.info-txt h4{
+    margin-bottom: 10px;
+
+}
+
+/*Box Model*/
+.conteiner{
+    max-width: 750px ; /*максимальная ширина */
+    margin: auto ; /*блок по центру */
+    padding-top: 30px;
+
+}
+
+ /* .social{ 
+    /* background-color: green; цвет блока */
+    /* padding: 15px; /*отступы внутренние, можем указать */
+    /* на все стороны отдельно */ 
+    /* border: 5px solid red; /*рамка блока, тоже настраивается
+    отдельно на все 4 стороны */ 
+    /* margin: 20px;/* внешние отступы */
+/* 
+/* .box-model >div{
+    background-color: #000; цвет
+    float: left; по левой стороне ориентация
+    height: 200px; высота
+    border: 4px solid red; рамка блоков
+    width: 25%; ширина каждого блока div
+    box-sizing: border-box; убираем отступы border margin padding
+    margin: auto;  создание блоков посредством div 
+}*/
+
+
+ .card{ 
+    padding:15px 20px; /*отступ */
+    /* background: red; вет блоков таблицы */
+    margin-bottom: 10px; /*отступы между блоков таблицы */
+    border-radius: 20px; /*скругление блока*/
+} 
+
+.bg-yellow{
+    background:  #fff9dc;
+}
+
+.bg-green{
+    background:  #e5ffe7;
+}
+
+.bg-red{
+    background:  #ffe5e5;
+}
+.card h2{
+    margin-bottom: 10px;
+    
+}
+.list{
+    padding: 0 20px;
+    /* list-style: none; */
+}
+.list li{
+    color:#86898f;
+    margin-bottom: 10px;
+}
+.table{
+    width: 100%;
+}
+.table td{
+    padding-bottom: 10px;
+}
+table td:nth-child(2),table td:nth-child(3){
+    color: #86898f;
+
+}
+.contact{
+    text-align: left;
+
+}
+.contact h2{
+    text-align: center;
+}
+
+.group label{
+display: block;
+font-size: 14px;
+color: #86898f;
+}
+.group input,
+.group textarea{
+     width: 100%;
+     box-sizing: border-box;
+     border: none;
+     background: transparent;
+     border-bottom: 1px solid #ccc;
+     color: black;
+     padding: 15px 0 10px;
+     outline: none;
+     font-family: inherit;
+}  
+.row {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.row > .group{
+    width: 50%;
+    margin-right: 20px;
+}
+.row > .group:last-child{
+    
+    margin-right: 0;
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color:#fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+} 
+.btn :hover {
+    opacity: 0.9;
+
+
+}
+
+
+
+
+
+    
+
